@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="">
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div class="loadingDiv-parent">
+        <div class="loadingDiv">
+            <img src="./images/transparent-gif-spinner-2.gif" />
+        </div>
+    </div>
+    <!-- Spinner Ends -->
+
+    <div class="written">
+
+        <div class="github" onclick="myGit()">
+            <a href="https://github.com/idowuadekale" target="_blank">GitHub</a>
+        </div>
+    </div>
+    <div id="myDIV" class="header">
+        <span class="note">
+             <div class="popup" onclick="myFunction()"> 
+                <span class="written">Written by Idowu Adekale</span>
+        <span class="popuptext" id="myPopup">Wow! You found me. Amazing!!!</span>
+    </div>
+    </span>
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h2 class="todo">My To Do List</h2>
+            </div>
+            <div class="flip-box-back">
+                <h2 class="to">Check my Github Page to see more of my codes...</h2>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+        <li>Welcome! - Checkout my code and Implement yours</li>
+        <li class="checked">Clone my Github code. </li>
+        <li>Try it out!</li>
+        <li>Today's Budget | Check...</li>
+    </ul>
+
+
+
+    <!-- Alternative JQuery -->
+    <script src="./jquery.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
